@@ -9,7 +9,7 @@ import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstati
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyC7JpAioVtcG2sgpmlTrWqP9x7QtWzmC-0",
+  apiKey: "",
   authDomain: "esio-b625c.firebaseapp.com",
   projectId: "esio-b625c",
   storageBucket: "esio-b625c.appspot.com",
