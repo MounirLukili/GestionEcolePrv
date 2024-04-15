@@ -1,0 +1,362 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #424ba8;
+}
+
+.main_container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font: normal 20px "Calibri", cursive;
+}
+.side_navigation {
+  flex: 1;
+  border-radius: 5px;
+  margin: 2% 0.5% 2% 2%;
+  padding: 0.5%;
+}
+.main_navigation {
+  flex: 3;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+}
+.logo_Home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #424ba8;
+  font-weight: bold;
+  margin-top: 1.5%;
+}
+.logo_Home p {
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .logo_Home {
+    flex-direction: column;
+  }
+  .logo_Home p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+.logo_Home:hover {
+  background-color: #ddd;
+  padding: 1%;
+  margin: 1%;
+  font-weight: bold;
+  color: #632766;
+  text-decoration: none;
+}
+
+hr {
+  margin: 2%;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn_navigation {
+  background-color: #f1f1f1;
+  color: #424ba8;
+  border: #424ba8 solid 1px;
+  font-weight: bold;
+}
+.btn_navigation_sec {
+  color: #424ba8;
+}
+.navigation_sec {
+  margin: 1%;
+  padding: 1%;
+}
+.user_profile {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font: normal 18px "Calibri", cursive;
+  color: #424ba8;
+}
+.user_login_information {
+  background-color: #f1f1f1;
+  margin-bottom: 1%;
+  padding: 0.5%;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.user_picture {
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin-right: 2%;
+}
+.user_name {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.user_information {
+  margin: 2% 2% 0 0;
+}
+.user_configuration {
+  border-radius: 5%;
+  background-color: #f1f1f1;
+  border: none;
+  font-size: 30px;
+  color: #424ba8;
+}
+
+.carouselDashboardTool {
+  height: 180px;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+}
+.carouselDashboardTool p {
+  font-size: 40px;
+}
+.carouselDashboardTool i {
+  font-size: 320%;
+}
+.carousel-indicators {
+  bottom: -10px;
+}
+
+.carousel-indicators li {
+  background-color: lightgray;
+}
+.carousel-indicators li[class="active"] {
+  background-color: #424ba8;
+}
+
+.manageComponentBtn {
+  color: #632766;
+  background-color: none;
+}
+
+.content {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content:hover {
+  opacity: 70%;
+}
+
+.content-image {
+  width: 100%;
+}
+.content-image :hover {
+  text-decoration: none;
+}
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -20%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1;
+  text-decoration: none;
+}
+
+.content-details h3 {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+
+.fadeIn-bottom {
+  top: 80%;
+}
+
+.addDelUserCard {
+  padding: 0.5%;
+}
+.addDelUserCard button {
+  font-weight: bold;
+}
+.user_navigation {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  font: normal 20px "Calibri", cursive;
+  color: #424ba8;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.dashboard {
+  display: block;
+}
+
+.warningServeur {
+  font-size: 80%;
+  opacity: 90%;
+  color: black;
+  font-weight: bold;
+}
+
+.activeDaschboardTool {
+  background-color: #632766;
+  border: none;
+  color: #ddd;
+  font-weight: bold;
+  font-size: 18px;
+}
+.activeDaschboardTypeTool {
+  background-color: #63276691;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.userInformations {
+  box-shadow: #63276644 0px 0px 5px 0px, #63276644 0px 0px 1px 0px;
+}
+
+.userInformations img {
+  height: 160px;
+  width: 160px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.userInformations p {
+  font: normal 16px "Calibri", cursive;
+  color: #515363;
+  font-weight: bold;
+}
+
+.addDelComponentForm {
+  font-size: 70%;
+}
+.shadowBoxStyle {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.addDelComponentBtn {
+  background-color: #424ba8;
+  color: white;
+  font-weight: bold;
+  border: #424ba8 1px solid;
+}
+
+.teacherList {
+  display: none;
+}
+.manageStudent {
+  display: none;
+}
+.studentsList {
+  display: none;
+}
+
+.toggle.ios,
+.toggle-on.ios,
+.toggle-off.ios {
+  border-radius: 20rem;
+  padding: 0.5%;
+}
+.toggle.ios .toggle-handle {
+  border-radius: 20rem;
+}
+
+.activeNotesPerChoice {
+  font-size: 80%;
+  color: #424ba8;
+}
+
+.inactiveNotesPerChoice {
+  font-size: 70%;
+  color: grey;
+  font-weight: none;
+}
+
+#dashboardTool2,
+#dashboardTool3,
+#dashboardTool4,
+#dashboardTool5,
+#dashboardTool6,
+#dashboardTool7,
+#modulesList,
+#notesConf,
+#notesPerStudents,
+#chooseStudentToshowNoteDiv,
+#userInformations {
+  display: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  color: #f1f1f1;
+  font: normal 16px "Calibri", cursive;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.users-scrollbar {
+  position: relative;
+  overflow: auto;
+  height: 250px;
+}
+.table-wrapper-scroll-y {
+  display: block;
+}
+.userImageInList {
+  height: 50px;
+  width: 50px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.usersListTable,
+.importerlesnotes,
+.exporterlesnotes {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.usersListTable button {
+  font-size: 25px;
+}
+
+.usersListTable input {
+  width: 200px;
+}
+
+.importExportTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.modulesNotesBox {
+  height: 290px;
+  overflow-y: scroll;
+  background-color: #bfc3ec;
+}
+
+.moduleBox {
+  color: #515363;
+}
+.moduleBox i {
+  font-size: 300%;
+}
+
+.moduleBox p {
+  font-size: 90%;
+}

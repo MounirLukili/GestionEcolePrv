@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #424ba8;
+}
+
+.header {
+  background-color: white;
+  padding: 10px;
+  height: 250px;
+}
+.logo {
+  padding: 10px;
+  margin: 15px;
+  background-color: white;
+  display: inline-block;
+}
+.logo:hover {
+  background-color: #f1f1f1;
+  margin: 30px;
+  border-radius: 5%;
+  transform: scale(1.4);
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  color: #f1f1f1;
+  font: normal 16px "Calibri", cursive;
+  padding: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.login-container {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  font: normal 20px "Calibri", cursive;
+  color: #424ba8;
+  width: 60%;
+  border-radius: 1%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.login-form {
+  margin: 1%;
+  text-align: center;
+}
+
+.login-form a {
+  font-size: 70%;
+  color: darkgrey;
+  text-decoration: none;
+}
+.verificationErreur {
+  color: rgb(168, 11, 11);
+  font-size: 70%;
+}
+
+.login-form i {
+  font-size: 500%;
+  margin: 1.5% 1.5% 0.5% 1.5%;
+}
+
+.login-form form input {
+  width: 50%;
+  padding: 12px 20px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  box-sizing: border-box;
+  margin-bottom: 0.5%;
+}
+.login-form form input[type="password"] {
+  width: 35%;
+  padding-right: 5px;
+}
+.login-form form input[type="button"] {
+  width: 15%;
+  margin-left: -5px;
+}
+.login-form form input[type="text"]:hover,
+.login-form form input[type="password"]:hover {
+  border: #424ba8 2px solid;
+}
+.login-form form input[type="submit"]:hover {
+  background-color: #632766;
+  color: white;
+  font-weight: bold;
+}

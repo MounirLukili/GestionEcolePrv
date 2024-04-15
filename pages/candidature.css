@@ -1,0 +1,81 @@
+/* Base styles for the body to reset margins and set a default font */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+/* Container for the pre-registration area */
+.preinscription-container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles within the form */
+.preinscription-titre,
+.preinscription-form-titles {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Horizontal rule styling */
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Form field styling */
+form label {
+    display: block;
+    margin-top: 10px;
+    color: #666;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="date"],
+form select,
+form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* The submit button */
+form input[type="submit"] {
+    width: auto;
+    padding: 10px 20px;
+    background: #5cb85c;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background: #449d44;
+}
+
+/* File input style */
+form input[type="file"] {
+    border: none;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+    .preinscription-container {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
